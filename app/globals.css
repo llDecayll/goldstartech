@@ -112,8 +112,9 @@ body {
   transform: translateY(0);
 }
 .btn--gold {
-  border-color: var(--gold-deep);
-  color: var(--gold-deep);
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
 }
 .btn--gold::before {
   background: var(--gold);
