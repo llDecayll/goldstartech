@@ -50,7 +50,7 @@ export default function Hero() {
         <h1 className="hero-el display opacity-0 translate-y-7 text-[2.6rem] leading-[1.02] md:text-7xl lg:text-8xl max-w-5xl">
           Growth, engineered
           <br />
-          with <span className="text-golddeep">precision.</span>
+          with <span className="text-gold">precision.</span>
         </h1>
         <p className="hero-el opacity-0 translate-y-7 mt-7 text-graphite text-lg leading-relaxed max-w-2xl">
           Goldstar Tech builds the websites, campaigns and software products
