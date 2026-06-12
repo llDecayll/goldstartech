@@ -135,10 +135,17 @@ export default function HomePage() {
       <Reveal className="mx-auto max-w-wrap px-5 md:px-8 py-20 md:py-28">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
+            <figure className="gs-reveal mb-10 max-w-[80%] overflow-hidden rounded-lg border border-line">
+              <img
+                src="/who-we-are-studio.png"
+                alt="Goldstar Tech team reviewing growth strategy"
+                className="aspect-[4/5] w-full object-cover"
+              />
+            </figure>
             <span className="gold-rule mb-6 max-w-[140px]" />
             <p className="eyebrow gs-reveal">Who we are</p>
           </div>
-          <div className="md:col-span-7">
+          <div className="md:col-span-7 md:-ml-8">
             <h2 className="display gs-reveal text-2xl md:text-4xl leading-snug">
               We are Goldstar Tech — a full-stack growth partner for businesses
               that are done with guesswork.

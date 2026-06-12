@@ -43,7 +43,7 @@ export default function Header() {
       <div className="mx-auto max-w-wrap px-5 md:px-8 flex items-center justify-between h-16 md:h-20">
         <Link
           href="/"
-          className="block w-36 sm:w-40 shrink-0"
+          className="block w-44 sm:w-48 shrink-0"
           aria-label="Goldstar Tech — home"
         >
           <img

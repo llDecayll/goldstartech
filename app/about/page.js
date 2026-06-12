@@ -72,21 +72,20 @@ const timeline = [
   },
 ];
 
-const leadership = [
+const founders = [
   {
-    name: "Arjun Mehta",
-    role: "Founder & Head of Strategy",
-    desc: "Sets the growth thesis for every engagement. Fifteen years across performance marketing and product, allergic to vanity metrics.",
+    name: "Thanabalasingam Ithayalal",
+    role: "Founder/CEO",
+    image: "/founder-thanabalasingam-ithayalal.jpg",
+    imagePosition: "52% center",
+    desc: "With a vision for building something meaningful, our founder brings a blend of big-picture thinking and hands-on experience. They set the tone for everything we do.",
   },
   {
-    name: "Priya Raghavan",
-    role: "Head of Technology",
-    desc: "Leads engineering across web, mobile and the Goldstar product line. Believes the best architecture is the one a junior dev can maintain.",
-  },
-  {
-    name: "Karan Shetty",
-    role: "Head of Client Partnerships",
-    desc: "Owns the client experience from first call to renewal. Measures himself on one number: how many clients refer us unprompted.",
+    name: "Ithayalal Prabakaran",
+    role: "Managing Director",
+    image: "/founder-ithayalal-prabakaran.jpeg",
+    imagePosition: "center top",
+    desc: "Focused, approachable, and driven by results, our Managing Director is all about building strong relationships. They help connect people to the right solutions—with clarity and care.",
   },
 ];
 
@@ -158,10 +157,10 @@ export default function AboutPage() {
       <section className="bg-ink text-paper py-20 md:py-24">
         <Reveal className="mx-auto max-w-wrap px-5 md:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
-            <Counter value={1} suffix="" label="Country focus: Sri Lanka" />
-            <Counter value={120} suffix="+" label="Websites, apps and campaigns shipped" />
-            <Counter value={18} suffix="" label="Specialists across strategy, design & engineering" />
-            <Counter value={93} suffix="%" label="Client retention beyond the first year" />
+            <Counter value={1} suffix="" label="Country focus: Sri Lanka" tone="dark" />
+            <Counter value={120} suffix="+" label="Websites, apps and campaigns shipped" tone="dark" />
+            <Counter value={18} suffix="" label="Specialists across strategy, design & engineering" tone="dark" />
+            <Counter value={93} suffix="%" label="Client retention beyond the first year" tone="dark" />
           </div>
         </Reveal>
       </section>
@@ -214,35 +213,33 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      {/* Leadership */}
-      <Reveal className="mx-auto max-w-wrap px-5 md:px-8 py-20 md:py-28">
-        <SectionHeading
-          eyebrow="Leadership"
-          title="The people who answer for the work."
-        />
-        <div className="grid md:grid-cols-3 gap-8">
-          {leadership.map((p) => (
-            <div
-              key={p.name}
-              className="gs-reveal card-hover border border-line p-8"
-            >
-              <div className="aspect-square bg-line/60 mb-6 flex items-center justify-center">
-                <StarMark size={42} className="card-star text-gold/50" />
-              </div>
-              <h3 className="font-display font-semibold text-xl">{p.name}</h3>
-              <p className="font-mono text-xs uppercase tracking-widest text-golddeep mt-1">
-                {p.role}
-              </p>
-              <p className="mt-4 text-sm text-graphite leading-relaxed">
-                {p.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </Reveal>
+      {/* Founders */}
+      <section className="bg-[#f8d4a7] py-20 md:py-24">
+        <Reveal className="mx-auto max-w-wrap px-5 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-20">
+            {founders.map((p) => (
+              <article key={p.name} className="gs-reveal">
+                <img
+                  src={p.image}
+                  alt={`${p.name}, ${p.role}`}
+                  className="aspect-[4/5] w-full max-w-[82%] object-cover"
+                  style={{ objectPosition: p.imagePosition }}
+                />
+                <h2 className="font-display text-2xl md:text-3xl mt-3 text-ink">
+                  {p.name}
+                </h2>
+                <p className="mt-5 text-sm font-medium text-ink">{p.role}</p>
+                <p className="mt-7 max-w-xl text-sm leading-relaxed text-ink">
+                  {p.desc}
+                </p>
+              </article>
+            ))}
+          </div>
+        </Reveal>
+      </section>
 
       {/* CTA */}
-      <Reveal className="mx-auto max-w-wrap px-5 md:px-8">
+      <Reveal className="mx-auto max-w-wrap px-5 md:px-8 pt-12 md:pt-16 pb-20 md:pb-28">
         <div className="border border-gold p-10 md:p-16 text-center">
           <p className="eyebrow gs-reveal mb-4">Work with us</p>
           <h2 className="display gs-reveal text-3xl md:text-4xl max-w-2xl mx-auto">

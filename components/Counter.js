@@ -7,9 +7,10 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-export default function Counter({ value, suffix = "", label }) {
+export default function Counter({ value, suffix = "", label, tone = "light" }) {
   const scope = useRef(null);
   const numRef = useRef(null);
+  const isDark = tone === "dark";
 
   useGSAP(
     () => {
@@ -36,10 +37,17 @@ export default function Counter({ value, suffix = "", label }) {
 
   return (
     <div ref={scope} className="border-l border-line pl-5">
-      <p ref={numRef} className="display text-4xl md:text-5xl text-ink">
+      <p
+        ref={numRef}
+        className={`display text-4xl md:text-5xl ${
+          isDark ? "text-paper" : "text-ink"
+        }`}
+      >
         0{suffix}
       </p>
-      <p className="mt-2 text-sm text-graphite">{label}</p>
+      <p className={`mt-2 text-sm ${isDark ? "text-paper/60" : "text-graphite"}`}>
+        {label}
+      </p>
     </div>
   );
 }
