@@ -59,8 +59,8 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`link-sweep text-sm font-medium hover:text-gold transition-colors ${
-                pathname === item.href ? "text-gold" : "text-ink"
+              className={`link-sweep text-sm font-medium ${
+                pathname === item.href ? "text-golddeep" : "text-ink"
               }`}
             >
               {item.label}
@@ -108,7 +108,7 @@ export default function Header() {
               style={{ transitionDelay: open ? `${i * 50}ms` : "0ms" }}
               className={`font-display text-3xl font-semibold py-3 border-b border-line transition-all duration-500 ${
                 open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              } ${pathname === item.href ? "text-gold" : "text-ink hover:text-gold"}`}
+              } ${pathname === item.href ? "text-golddeep" : "text-ink"}`}
             >
               {item.label}
             </Link>
