@@ -1,5 +1,4 @@
 import Link from "next/link";
-import StarMark from "./StarMark";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,14 +8,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="md:col-span-5">
-            <Link href="/" className="flex items-center gap-2 group w-fit">
-              <StarMark
-                size={22}
-                className="text-gold transition-transform duration-500 group-hover:rotate-180"
+            <Link href="/" className="block w-40">
+              <img
+                src="/logo.png"
+                alt="Goldstar Tech Logo"
+                className="h-auto w-full object-contain"
               />
-              <span className="font-display font-bold text-xl tracking-tight">
-                Goldstar Tech
-              </span>
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-paper/60 max-w-sm">
               A digital marketing and software development agency in Bangalore,

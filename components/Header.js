@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import StarMark from "./StarMark";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -44,16 +43,14 @@ export default function Header() {
       <div className="mx-auto max-w-wrap px-5 md:px-8 flex items-center justify-between h-16 md:h-20">
         <Link
           href="/"
-          className="flex items-center gap-2 group"
+          className="block w-36 sm:w-40 shrink-0"
           aria-label="Goldstar Tech — home"
         >
-          <StarMark
-            size={20}
-            className="text-gold transition-transform duration-500 group-hover:rotate-180"
+          <img
+            src="/logo.png"
+            alt="Goldstar Tech Logo"
+            className="h-auto w-full object-contain"
           />
-          <span className="font-display font-bold tracking-tight text-lg">
-            Goldstar<span className="text-golddeep">&nbsp;Tech</span>
-          </span>
         </Link>
 
         {/* Desktop nav */}
