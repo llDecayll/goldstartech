@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #141413;
+  --paper: #fbfaf7;
+  --gold: #c9a227;
+  --gold-deep: #8f7117;
+  --graphite: #56554e;
+  --line: #e8e5dc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* ---------- Type ---------- */
+.display {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+/* ---------- Gold hairline that draws in on scroll ---------- */
+.gold-rule {
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, var(--gold), rgba(201, 162, 39, 0.15));
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+/* ---------- Link underline sweep ---------- */
+.link-sweep {
+  position: relative;
+  text-decoration: none;
+}
+.link-sweep::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-sweep:hover::after,
+.link-sweep:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* ---------- Primary button ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  padding: 0.85rem 1.6rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.35s ease, border-color 0.35s ease;
+  isolation: isolate;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ink);
+  transform: translateY(101%);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: -1;
+}
+.btn:hover,
+.btn:focus-visible {
+  color: var(--paper);
+}
+.btn:hover::before,
+.btn:focus-visible::before {
+  transform: translateY(0);
+}
+.btn--gold {
+  border-color: var(--gold-deep);
+  color: var(--gold-deep);
+}
+.btn--gold::before {
+  background: var(--gold);
+}
+.btn--gold:hover,
+.btn--gold:focus-visible {
+  color: var(--ink);
+  border-color: var(--gold);
+}
+.btn--invert {
+  border-color: var(--paper);
+  color: var(--paper);
+}
+.btn--invert::before {
+  background: var(--paper);
+}
+.btn--invert:hover,
+.btn--invert:focus-visible {
+  color: var(--ink);
+}
+
+/* ---------- Cards ---------- */
+.card-hover {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease, border-color 0.45s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 18px 40px -24px rgba(20, 20, 19, 0.35);
+}
+.card-hover:hover .card-star {
+  transform: rotate(180deg) scale(1.15);
+  color: var(--gold);
+}
+.card-star {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), color 0.4s ease;
+}
+
+/* ---------- Marquee ---------- */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee__track {
+  display: inline-flex;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+/* ---------- Slow star spin ---------- */
+.spin-slow {
+  animation: spin 14s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Reveal default state (GSAP animates in) ---------- */
+.gs-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+/* ---------- Prose for legal & blog pages ---------- */
+.prose-gs h2 {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose-gs h3 {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.prose-gs p {
+  color: var(--graphite);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.prose-gs ul {
+  list-style: none;
+  margin: 1rem 0 1.25rem;
+  padding: 0;
+}
+.prose-gs ul li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--graphite);
+  line-height: 1.7;
+  margin-bottom: 0.45rem;
+}
+.prose-gs ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold);
+  font-size: 0.7rem;
+  line-height: 1.9;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee__track,
+  .spin-slow {
+    animation: none;
+  }
+  .gs-reveal {
+    opacity: 1;
+    transform: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
