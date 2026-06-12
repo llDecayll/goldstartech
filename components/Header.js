@@ -73,7 +73,7 @@ export default function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden flex flex-col justify-center items-end gap-1.5 w-10 h-10"
+          className="relative z-[10000] md:hidden flex flex-col justify-center items-end gap-1.5 w-10 h-10"
           onClick={() => setOpen(!open)}
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
@@ -93,12 +93,12 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden fixed inset-0 top-16 bg-paper transition-opacity duration-300 ${
+        className={`md:hidden fixed left-0 top-0 z-[9999] h-screen w-full bg-white transition-opacity duration-300 ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         <nav
-          className="flex flex-col px-6 pt-8 gap-1"
+          className="flex flex-col px-6 pt-24 gap-1"
           aria-label="Mobile"
         >
           {NAV.map((item, i) => (
