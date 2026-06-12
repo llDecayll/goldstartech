@@ -5,8 +5,8 @@
 :root {
   --ink: #141413;
   --paper: #fbfaf7;
-  --gold: #d4af37;
-  --gold-deep: #9a7a16;
+  --gold: #c9a227;
+  --gold-deep: #8f7117;
   --graphite: #56554e;
   --line: #e8e5dc;
 }
@@ -48,7 +48,7 @@ body {
 .gold-rule {
   display: block;
   height: 1px;
-  background: linear-gradient(90deg, var(--gold), rgba(212, 175, 55, 0.15));
+  background: linear-gradient(90deg, var(--gold), rgba(201, 162, 39, 0.15));
   transform-origin: left center;
   transform: scaleX(0);
 }

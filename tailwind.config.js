@@ -6,8 +6,8 @@ module.exports = {
       colors: {
         ink: "#141413",
         paper: "#FBFAF7",
-        gold: "#D4AF37",
-        golddeep: "#9A7A16",
+        gold: "#C9A227",
+        golddeep: "#8F7117",
         graphite: "#56554E",
         line: "#E8E5DC",
       },
