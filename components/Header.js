@@ -47,7 +47,7 @@ export default function Header() {
           aria-label="Goldstar Tech — home"
         >
           <img
-            src="/logo.png"
+            src="/logo-transparent.png"
             alt="Goldstar Tech Logo"
             className="h-auto w-full object-contain"
           />

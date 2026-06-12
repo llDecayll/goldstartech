@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Link href="/" className="block w-40">
               <img
-                src="/logo.png"
+                src="/logo-transparent.png"
                 alt="Goldstar Tech Logo"
                 className="h-auto w-full object-contain"
               />
