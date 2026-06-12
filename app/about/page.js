@@ -8,7 +8,7 @@ import Marquee from "@/components/Marquee";
 export const metadata = {
   title: "About Us — Our Story, Values & Team",
   description:
-    "Goldstar Tech is a Bangalore-founded digital marketing and software development agency. Learn about our story, our values, the leadership team and why clients across seven countries trust us with their growth.",
+    "Goldstar Tech is a Sri Lanka-based digital marketing and software development agency. Learn about our story, our values, the leadership team and why Sri Lankan businesses trust us with their growth.",
   alternates: { canonical: "/about" },
 };
 
@@ -42,13 +42,13 @@ const values = [
 const timeline = [
   {
     year: "2019",
-    title: "Founded in Bangalore",
+    title: "Founded in Sri Lanka",
     desc: "Goldstar Tech opens with three people, two laptops and a conviction: agencies should be accountable to outcomes, not activity.",
   },
   {
     year: "2021",
-    title: "First international clients",
-    desc: "Word of mouth carries us to the UK and UAE. We build our first sector playbooks for healthcare and real estate.",
+    title: "Sri Lankan sector playbooks",
+    desc: "Word of mouth carries us across Sri Lanka. We build our first sector playbooks for healthcare and real estate.",
   },
   {
     year: "2023",
@@ -67,8 +67,8 @@ const timeline = [
   },
   {
     year: "2026",
-    title: "Seven countries, six verticals",
-    desc: "Today we serve clients across India, the UK, UAE, USA, Canada, Australia and New Zealand with a team that still answers its own phone.",
+    title: "Sri Lanka focus, six verticals",
+    desc: "Today we serve clients across Sri Lanka with a team that still answers its own phone.",
   },
 ];
 
@@ -111,8 +111,8 @@ export default function AboutPage() {
       <Marquee
         items={[
           "Founded 2019",
-          "Bangalore HQ",
-          "7 countries",
+          "Sri Lanka HQ",
+          "Sri Lanka-wide",
           "6 verticals",
           "One accountable team",
         ]}
@@ -125,7 +125,7 @@ export default function AboutPage() {
             <span className="gold-rule mb-6 max-w-[140px]" />
             <p className="eyebrow gs-reveal">Our story</p>
             <h2 className="display gs-reveal text-3xl md:text-4xl mt-3">
-              From two laptops to a seven-country practice.
+              From two laptops to a Sri Lanka-wide practice.
             </h2>
           </div>
           <div className="md:col-span-7 space-y-5 text-graphite leading-relaxed">
@@ -158,7 +158,7 @@ export default function AboutPage() {
       <section className="bg-ink text-paper py-20 md:py-24">
         <Reveal className="mx-auto max-w-wrap px-5 md:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
-            <Counter value={7} suffix="" label="Countries served from one Bangalore HQ" />
+            <Counter value={1} suffix="" label="Country focus: Sri Lanka" />
             <Counter value={120} suffix="+" label="Websites, apps and campaigns shipped" />
             <Counter value={18} suffix="" label="Specialists across strategy, design & engineering" />
             <Counter value={93} suffix="%" label="Client retention beyond the first year" />

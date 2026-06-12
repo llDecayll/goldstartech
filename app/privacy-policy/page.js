@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
           We keep personal information only as long as needed for the purposes
           described above. Enquiry records are typically retained for 24
           months; contractual and billing records are retained as required by
-          Indian tax and company law; product account data is retained for the
+          Sri Lankan tax and company law; product account data is retained for the
           life of the account plus a short deletion window.
         </p>
 
@@ -147,7 +147,8 @@ export default function PrivacyPolicyPage() {
         <p>
           Questions, requests or concerns about this policy can be sent to
           hello@goldstartech.com or posted to Goldstar Tech Pvt Ltd,
-          Indiranagar, Bangalore, Karnataka, India 560038.
+          Level 26, East Tower, World Trade Center, Echelon Square,
+          Colombo 00100, Sri Lanka.
         </p>
       </div>
     </Reveal>

@@ -9,9 +9,9 @@ import { posts } from "@/lib/posts";
 
 export const metadata = {
   title:
-    "Goldstar Tech | Digital Marketing & Software Development Agency in Bangalore",
+    "Goldstar Tech | Digital Marketing & Software Development Agency in Sri Lanka",
   description:
-    "Goldstar Tech engineers measurable growth: web design & development, SEO, AEO/GEO, social media marketing, performance advertising, mobile apps, software products and AI solutions for businesses in India and worldwide.",
+    "Goldstar Tech engineers measurable growth: web design & development, SEO, AEO/GEO, social media marketing, performance advertising, mobile apps, software products and AI solutions for businesses across Sri Lanka.",
   alternates: { canonical: "/" },
 };
 
@@ -63,7 +63,7 @@ const sectors = [
   },
   {
     name: "Solar & energy",
-    desc: "Demand generation for installers and energy brands riding India's renewable transition.",
+    desc: "Demand generation for installers and energy brands riding Sri Lanka's renewable transition.",
   },
 ];
 
@@ -95,19 +95,19 @@ const testimonials = [
     quote:
       "Goldstar rebuilt our website and our patient enquiries doubled within a quarter. Their reports actually explain what the numbers mean.",
     name: "Clinic Director",
-    org: "Multi-speciality dental group, Bangalore",
+    org: "Multi-speciality dental group, Colombo",
   },
   {
     quote:
       "The first agency that pushed back on our brief — and they were right. Lead quality went up even as our cost per site visit fell.",
     name: "VP Marketing",
-    org: "Residential developer, UAE",
+    org: "Residential developer, Sri Lanka",
   },
   {
     quote:
       "One team handled our store build, SEO and ads. No more coordinating three vendors who blame each other.",
     name: "Founder",
-    org: "D2C retail brand, UK",
+    org: "D2C retail brand, Sri Lanka",
   },
 ];
 
@@ -144,11 +144,10 @@ export default function HomePage() {
               that are done with guesswork.
             </h2>
             <p className="gs-reveal mt-6 text-graphite leading-relaxed">
-              Founded in Bangalore, we combine the craft of a design studio,
+              Based in Sri Lanka, we combine the craft of a design studio,
               the rigour of an engineering team and the accountability of a
               performance agency. Our clients span healthcare, real estate,
-              agri-tech, solar energy, hospitality and retail across India,
-              the UK, UAE, USA, Canada, Australia and New Zealand.
+              agri-tech, solar energy, hospitality and retail across Sri Lanka.
             </p>
             <p className="gs-reveal mt-4 text-graphite leading-relaxed">
               Everything we ship is built to be measured. If a page, post or
@@ -206,7 +205,7 @@ export default function HomePage() {
           title="Numbers our clients can verify."
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
-          <Counter value={120} suffix="+" label="Projects delivered across 7 countries" />
+          <Counter value={120} suffix="+" label="Projects delivered across Sri Lanka" />
           <Counter value={40} suffix="+" label="Active client partnerships" />
           <Counter value={6} suffix="" label="Industry verticals with deep playbooks" />
           <Counter value={93} suffix="%" label="Clients who stay beyond year one" />

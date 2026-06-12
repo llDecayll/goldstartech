@@ -5,7 +5,7 @@ import StarMark from "@/components/StarMark";
 export const metadata = {
   title: "Contact Us — Start a Project",
   description:
-    "Talk to Goldstar Tech about web design, SEO, social media, performance ads, app development or AI solutions. Bangalore HQ, serving India, UK, UAE, USA, Canada, Australia and New Zealand.",
+    "Talk to Goldstar Tech about web design, SEO, social media, performance ads, app development or AI solutions in Sri Lanka.",
   alternates: { canonical: "/contact" },
 };
 
@@ -15,8 +15,8 @@ const faqs = [
     a: "Within one business day, always. If your enquiry is urgent, call us directly — a human picks up.",
   },
   {
-    q: "Do you work with businesses outside India?",
-    a: "Yes. Roughly half our client base is international, across the UK, UAE, USA, Canada, Australia and New Zealand. We schedule calls around your timezone.",
+    q: "Do you work with businesses across Sri Lanka?",
+    a: "Yes. We support Sri Lankan businesses across sectors and schedule calls around Sri Lanka Standard Time.",
   },
   {
     q: "What budgets do you work with?",
@@ -76,12 +76,16 @@ export default function ContactPage() {
               <p className="text-graphite text-sm leading-relaxed">
                 Goldstar Tech Pvt Ltd
                 <br />
-                Indiranagar, Bangalore
+                Level 26, East Tower
                 <br />
-                Karnataka, India 560038
+                World Trade Center
+                <br />
+                Echelon Square
+                <br />
+                Colombo 00100, Sri Lanka
               </p>
               <p className="mt-4 text-xs font-mono uppercase tracking-widest text-golddeep">
-                Mon–Fri · 9:30–18:30 IST
+                Mon–Fri · 9:30–18:30 SLST
               </p>
             </div>
             <div className="gs-reveal bg-ink text-paper p-8 relative overflow-hidden">

@@ -45,7 +45,7 @@ export default function Hero() {
       <div className="mx-auto max-w-wrap px-5 md:px-8 relative">
         <span className="hero-rule gold-rule max-w-[180px] mb-8" />
         <p className="hero-el eyebrow mb-5 opacity-0 translate-y-7">
-          Digital marketing &amp; software agency — Bangalore
+          Digital marketing &amp; software agency — Sri Lanka
         </p>
         <h1 className="hero-el display opacity-0 translate-y-7 text-[2.6rem] leading-[1.02] md:text-7xl lg:text-8xl max-w-5xl">
           Growth, engineered
@@ -55,7 +55,7 @@ export default function Hero() {
         <p className="hero-el opacity-0 translate-y-7 mt-7 text-graphite text-lg leading-relaxed max-w-2xl">
           Goldstar Tech builds the websites, campaigns and software products
           that turn attention into revenue. One team for design, development,
-          SEO, paid media and AI — from Bangalore to seven countries.
+          SEO, paid media and AI — focused exclusively on Sri Lanka.
         </p>
         <div className="hero-el opacity-0 translate-y-7 mt-10 flex flex-wrap gap-4">
           <Link href="/contact" className="btn btn--gold">

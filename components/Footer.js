@@ -16,9 +16,8 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-paper/60 max-w-sm">
-              A digital marketing and software development agency in Bangalore,
-              building measurable growth for businesses across India, the UK,
-              UAE, USA, Canada, Australia and New Zealand.
+              A digital marketing and software development agency in Sri Lanka,
+              building measurable growth for businesses across Sri Lanka.
             </p>
             <p className="mt-6 font-mono text-xs tracking-widest uppercase text-gold">
               Growth, engineered.
@@ -72,9 +71,13 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-paper/50 pt-2">
-                Indiranagar, Bangalore
+                Level 26, East Tower
                 <br />
-                Karnataka, India 560038
+                World Trade Center
+                <br />
+                Echelon Square
+                <br />
+                Colombo 00100, Sri Lanka
               </li>
             </ul>
           </div>

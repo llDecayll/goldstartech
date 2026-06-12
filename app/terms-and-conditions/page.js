@@ -32,7 +32,7 @@ export default function TermsPage() {
         <h2>1. About us</h2>
         <p>
           Goldstar Tech Pvt Ltd is a digital marketing and software
-          development agency registered in Bangalore, Karnataka, India. We
+          development agency registered in Sri Lanka. We
           provide web design and development, search and AI-visibility
           optimisation, social media marketing, performance advertising,
           mobile app development, software product development, branding and
@@ -143,8 +143,8 @@ export default function TermsPage() {
 
         <h2>14. Governing law and disputes</h2>
         <p>
-          These Terms are governed by the laws of India. The courts of
-          Bangalore, Karnataka have exclusive jurisdiction over disputes
+          These Terms are governed by the laws of Sri Lanka. The courts of
+          Colombo have exclusive jurisdiction over disputes
           arising from these Terms or use of the Site, subject to any
           dispute-resolution process agreed in an Engagement Document.
         </p>
@@ -152,8 +152,8 @@ export default function TermsPage() {
         <h2>15. Contact</h2>
         <p>
           Questions about these Terms can be sent to hello@goldstartech.com or
-          posted to Goldstar Tech Pvt Ltd, Indiranagar, Bangalore, Karnataka,
-          India 560038.
+          posted to Goldstar Tech Pvt Ltd, Level 26, East Tower,
+          World Trade Center, Echelon Square, Colombo 00100, Sri Lanka.
         </p>
       </div>
     </Reveal>
